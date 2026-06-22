@@ -59,6 +59,13 @@ python evaluate.py
 
 
 ...........................................
+
+To view the Tensorboard graphs:
+Type in the cmd window terminal:
+
+tensorboard --logdir logs
+
+...........................................
 📊 Goals of this Project
 Understand RL fundamentals
 Compare Q-Learning vs Deep RL methods
