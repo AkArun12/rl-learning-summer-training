@@ -16,18 +16,15 @@ PPO (Proximal Policy Optimization)
 ...........................................
 🎮 Environments Used
 CartPole-v1
-MountainCar-v0
-FrozenLake-v1
+LunarLender-v3
+
 (using Gymnasium)
 ...........................................
 📁 Project Structure
 rl-learning/
 │
-├── dqn/              # Deep Q-Network experiments
-├── ppo/              # PPO experiments
-├── q_learning/       # Tabular Q-learning
-├── common/           # Helper functions (plots, utils)
-├── results/          # Training results & graphs
+├── cartpole_class_dqn/              # Deep Q-Network experiments
+├── lunarlander_class_dqn/              # DQN experiments
 ├── requirements.txt
 └── README.md
 
@@ -51,14 +48,15 @@ pip install -r requirements.txt
 ...........................................
 
 🚀 Running Examples
-1. DQN on CartPole
-python dqn/cartpole.py
 
-2. PPO on CartPole
-python ppo/cartpole.py
+1. cartpole_class_dqn
+python train.py
+python evaluate.py
 
-3. Q-Learning (FrozenLake)
-python q_learning/frozenlake.py
+2. lunarlander_class_dqn
+python train.py
+python evaluate.py
+
 
 ...........................................
 📊 Goals of this Project
@@ -67,4 +65,5 @@ Compare Q-Learning vs Deep RL methods
 Experiment with different environments
 Track training performance and rewards
 
-...........................................Author : Arun Kathariya
+...........................................
+Author : Arun Kathariya
