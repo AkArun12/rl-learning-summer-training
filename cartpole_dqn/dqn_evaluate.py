@@ -7,22 +7,27 @@ def evaluate():
 
     model = DQN.load("dqn_model/cartpole_dqn")
 
-    obs, info = env.reset()
+    scores = []
 
-    terminated = False
-    truncated = False
+    for i in range(30):
+        obs, info = env.reset()
 
-    total_reward = 0
+        terminated = False
+        truncated = False
 
-    while not (truncated or terminated):
-        action, _ = model.predict(obs, deterministic=True)
+        total_reward = 0
 
-        obs, reward, terminated, truncated, info = env.step(action)
-        total_reward += reward
+        while not (truncated or terminated):
+            action, _ = model.predict(obs, deterministic=True)
 
-        print("Reward: ", reward)
+            obs, reward, terminated, truncated, info = env.step(action)
+            total_reward += reward
 
-    print("Total Reward: ", total_reward)
+        scores.append(total_reward)
+
+    print("Average Reward: ", sum(scores) / len(scores))
+    print(f"Best: {max(scores)}")
+    print(f"Worst: {min(scores)}")
 
     env.close()
 
