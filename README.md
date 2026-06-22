@@ -47,20 +47,20 @@ pip install -r requirements.txt
 
 ...........................................
 
-🚀 Running Examples
+4. Running Examples
 
-1. cartpole_class_dqn
+A. cartpole_class_dqn
 python train.py
 python evaluate.py
 
-2. lunarlander_class_dqn
+B. lunarlander_class_dqn
 python train.py
 python evaluate.py
 
 
 ...........................................
 
-To view Tensorboard
+5. To view Tensorboard
 Type in the cmd terminal:
 
 tensorboard --logdir logs
