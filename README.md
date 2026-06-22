@@ -60,8 +60,8 @@ python evaluate.py
 
 ...........................................
 
-To view the Tensorboard graphs:
-Type in the cmd window terminal:
+To view Tensorboard
+Type in the cmd terminal:
 
 tensorboard --logdir logs
 
