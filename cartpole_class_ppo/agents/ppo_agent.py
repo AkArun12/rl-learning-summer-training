@@ -17,7 +17,7 @@ class PPOAgent:
             tensorboard_log="./logs",
         )
 
-    # Function to tarin the model:
+    # Function to train the model:
     def train_agent(self, timesteps=200000):
         self.model.learn(total_timesteps=timesteps)
 
