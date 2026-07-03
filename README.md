@@ -83,7 +83,7 @@ pip install -r requirements.txt
 
 ## 🚀 Running Examples
 
-### 🟢 CartPole (DQN)
+### 🟢 CartPole (DQN/PPO)
 
 ```bash
 python train.py
@@ -95,7 +95,7 @@ You can run `evaluate.py` directly if a trained model already exists. Otherwise,
 
 ---
 
-### 🟢 LunarLander (DQN)
+### 🟢 LunarLander (DQN/PPO)
 
 ```bash
 python train.py
